@@ -46,7 +46,7 @@ function require_login()
 
 function require_admin()
 {
-    if (!is_admin()) {
+    if (!is_admin() || !is_admin()) {
 
         $_SESSION['error'] =
             'You do not have permission to access this page.';

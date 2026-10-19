@@ -89,18 +89,17 @@ class CustomerClass extends Database
 
     public function login($email, $pass)
 {
-    $customer = $this->getCustomerByEmail($email);
+        $customer = $this->getCustomerByEmail($email);
 
-    if (!$customer) {
-        return false;
+        if (!$customer) {
+            return false;
     }
 
-
-
-    if (!password_verify($pass, $customer['customer_pass'])) {
-        return false;
+        if (!password_verify($pass, $customer['customer_pass'])) {
+            return false;
     }
 
-    return $customer;
-}}
+        return $customer;
+}
+}
 ?>

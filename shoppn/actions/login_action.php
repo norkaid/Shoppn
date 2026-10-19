@@ -64,8 +64,6 @@ $_SESSION['user_role'] =
     $customer['user_role'];
 
 
-
-
 redirect(
     'http://169.239.251.102:442/~donna.omaboe/e-commerce/shoppn/index.php'
 );
